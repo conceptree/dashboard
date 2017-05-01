@@ -22,7 +22,70 @@ html,body{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.5s ease;
 }
 
 /*Main Styles*/
+
+.ds-main-container{
+    position: absolute;
+    width:100%;
+    min-height: 100vh;
+    background: #fff;
+}
+
+.ds-side-menu{
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    left: 0px;
+    background: #252D3A;
+}
+
+.ds-side-menu-logo{
+    width: 100%;
+    height: 40px;
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+
+.ds-side-menu-navigation{
+    margin-top: 20px;
+    width: 40px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ds-side-menu-navigation>div{
+    flex: 1;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1em;
+    color: #fff;
+    line-height: 40px;
+    border-bottom: 1px solid #fff;
+}
+
+.ds-side-menu-navigation>div:last-child{
+    border-bottom: none;
+}
+
+.ds-side-menu-navigation>div>span{
+    display: none;
+    margin-left: 5px;
+}
+
+.ds-side-menu-navigation>div:hover{
+    background:#5492DE;
+}
+
+.menu-open{
+    width: 200px;
+}
 
