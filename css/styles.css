@@ -32,7 +32,7 @@ html,body{
     position: absolute;
     width:100%;
     min-height: 100vh;
-    background: #fff;
+    background: #F0F5F9;
 }
 
 .ds-side-menu{
@@ -41,6 +41,7 @@ html,body{
     height: 100%;
     left: 0px;
     background: #252D3A;
+    overflow: hidden;
 }
 
 .ds-side-menu-logo{
