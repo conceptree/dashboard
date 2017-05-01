@@ -66,11 +66,14 @@ html,body{
     flex: 1;
     height: 40px;
     cursor: pointer;
-    
     font-size: 1em;
     color: #fff;
     border-bottom: 1px solid #fff;
     display: flex;
+}
+
+.ds-side-menu-navigation>div:last-child{
+    border-bottom: none;
 }
 
 .ds-side-menu-navigation>div:hover{
