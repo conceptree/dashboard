@@ -50,11 +50,12 @@ html,body{
     color: #fff;
     text-align: center;
     line-height: 40px;
+    margin-top: 10px;
 }
 
 .ds-side-menu-navigation{
     margin-top: 20px;
-    width: 40px;
+    flex:1;
     height: auto;
     display: flex;
     justify-content: center;
@@ -65,20 +66,11 @@ html,body{
     flex: 1;
     height: 40px;
     cursor: pointer;
-    text-align: center;
+    
     font-size: 1em;
     color: #fff;
-    line-height: 40px;
     border-bottom: 1px solid #fff;
-}
-
-.ds-side-menu-navigation>div:last-child{
-    border-bottom: none;
-}
-
-.ds-side-menu-navigation>div>span{
-    display: none;
-    margin-left: 5px;
+    display: flex;
 }
 
 .ds-side-menu-navigation>div:hover{
@@ -89,3 +81,16 @@ html,body{
     width: 200px;
 }
 
+.ds-side-menu-navigation-icon{
+    min-width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.ds-side-menu-navigation-label{
+    height: 40px;
+    text-align: left;
+    line-height: 40px;
+    font-size: 0.8em;
+}
