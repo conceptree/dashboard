@@ -2,16 +2,31 @@
 
 function initDashboard(dsOptions){
 
+    var mainSelector =  document.getElementsByClassName(dsOptions.mainSelector);
+    var sideMenuSelector = document.getElementsByClassName(dsOptions.sideMenuSelector);
+
+
+    /*
+     * Side Menu
+     */
+    function initSideMenu(){
+         initMenuInteractions();
+    }
+
+    /*
+     * Side Menu Interactions
+     */
     function initMenuInteractions(){
 
-        $('.ds-side-menu').mouseover(function(){
-            $('.ds-side-menu').addClass('menu-open');
+        $(sideMenuSelector).mouseover(function(){
+            $(sideMenuSelector).addClass('menu-open');
         }).mouseout(function(){
-            $('.ds-side-menu').removeClass('menu-open');
+            $(sideMenuSelector).removeClass('menu-open');
         });
 
     }
 
-    initMenuInteractions();
+
+    initSideMenu();
 
 }

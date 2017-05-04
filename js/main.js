@@ -2,6 +2,12 @@
 
 requirejs(["dashboard"], function loadingDashboarJS() {
     
-    initDashboard();
+
+    var dsConfigs = {
+        mainSelector : 'ds-main-container',
+        sideMenuSelector: 'ds-side-menu'
+    };
+
+    initDashboard(dsConfigs);
 
 });
