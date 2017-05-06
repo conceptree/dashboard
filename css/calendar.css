@@ -35,17 +35,9 @@
     background: #cacaca;
 }
 
-.weekdays li{
-    border-right: 1px solid #fff;
-}
-
-.weekdays li:last-child{
+.weekdays li:nth-child(6), .weekdays li:last-child{
     font-weight: bold;
-    border-right: none;
-}
-
-.weekdays li:first-child{
-    font-weight: bold;
+    color: #20AAEA;
 }
 
 .days li span{
