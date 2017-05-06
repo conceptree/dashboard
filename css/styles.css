@@ -1,30 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
-
-html,body{
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Didact Gothic', sans-serif;
-    font-size:20px;
-    overflow-x:hidden;
-    overflow-y: auto;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-*{
-    padding: 0px;
-    margin: 0px;
-    clear: both;
-    outline: none;
-    border: none;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    text-decoration: none;
-    transition: all 0.5s ease;
-}
+@import url('reset.css');
+@import url('calendar.css');
 
 /*Main Styles*/
 
@@ -35,6 +10,7 @@ html,body{
     background: #F0F5F9;
 }
 
+/*MENU*/
 .ds-side-menu{
     position: absolute;
     width: 40px;
@@ -63,7 +39,7 @@ html,body{
     flex-direction: column;
 }
 
-.ds-side-menu-navigation>div{
+.ds-side-menu-navigation>a{
     flex: 1;
     height: 40px;
     cursor: pointer;
@@ -73,12 +49,12 @@ html,body{
     display: flex;
 }
 
-.ds-side-menu-navigation>div:last-child{
+.ds-side-menu-navigation>a:last-child{
     border-bottom: none;
 }
 
-.ds-side-menu-navigation>div:hover{
-    background:#5492DE;
+.ds-side-menu-navigation>a:hover{
+    background:#20AAEA;
 }
 
 .menu-open{
@@ -97,4 +73,22 @@ html,body{
     text-align: left;
     line-height: 40px;
     font-size: 0.8em;
+}
+
+/*WIDGETS*/
+.ds-widgets-container{
+    display: flex;
+    padding: 50px;
+    padding-top: 20px;
+    padding-bottom:20px;
+    padding-right: 20px;
+    min-width: 100vw;
+    min-height: 100vh;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.ds-wg{
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 2px #cacaca;
 }

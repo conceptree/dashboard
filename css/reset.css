@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+
+html,body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size:20px;
+    overflow-x:hidden;
+    overflow-y: auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    clear: both;
+    outline: none;
+    border: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}

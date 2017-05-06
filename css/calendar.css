@@ -1,0 +1,65 @@
+.ds-wg-calendar{
+    flex:1;
+}
+
+.month, .weekdays, .days{
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.month li, .weekdays li, .days li{
+    flex: 1;
+    padding: 5px;
+    text-align: center;
+}
+
+.month{
+    background: #20AAEA;
+    color:#fff;
+}
+
+.month li:first-child{
+    cursor: pointer;
+    text-align: left;
+}
+
+.month li:last-child{
+    cursor: pointer;
+    text-align: right;
+}
+
+.weekdays{
+    background: #cacaca;
+}
+
+.weekdays li{
+    border-right: 1px solid #fff;
+}
+
+.weekdays li:last-child{
+    font-weight: bold;
+    border-right: none;
+}
+
+.weekdays li:first-child{
+    font-weight: bold;
+}
+
+.days li span{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    border-radius: 100000px;
+    cursor: pointer;
+}
+
+.days li span:active,.days li span:hover, .days li .active{
+    background: #20AAEA;
+    color: #fff;
+}
