@@ -85,10 +85,14 @@
     min-width: 100vw;
     min-height: 100vh;
     align-content: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .ds-wg{
+    max-width: 500px;
+    max-height: 600px;
     border-radius: 5px;
     box-shadow: 1px 1px 1px 2px #cacaca;
+    margin: 10px;
 }
